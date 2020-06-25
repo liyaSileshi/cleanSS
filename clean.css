@@ -1,3 +1,8 @@
+:root {
+  --primary-color: cornflowerblue;
+  --foreground-color: #fff;
+}
+
 body {
   /* background-color: rgb(245, 240, 233); */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -51,5 +56,121 @@ strong {
 
 abbr {
   text-decoration: none;
+}
+
+button {
+  --bg-color: var(--primary-color);
+  --fg-color: var(--foreground-color);
+
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  border-color: var(--bg-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0.5em 0.75em;
+  border: 2px solid;
+  border-radius: 0.5em;
+  font-size: 1em;
+  transition: 300ms;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+button:hover {
+  --bg-color: rgb(46, 114, 240);
+  /* background-color: rgb(46, 114, 240); */
+}
+
+button.primary {
+  background-color: var(--bg-color);
+}
+
+button.primary:hover {
+  --bg-color: rgb(46, 114, 240);
+  /* background-color: rgb(46, 114, 240); */
+}
+
+button.secondary {
+  --bg-color: rgb(163, 168, 177);
+}
+
+button.secondary:hover {
+  --bg-color: rgb(130, 131, 133);
+}
+
+button.success {
+  --bg-color: rgb(43, 172, 43);
+}
+
+button.success:hover {
+  --bg-color: rgb(32, 131, 32);
+}
+
+button.danger {
+  --bg-color: rgb(244, 99, 73);
+}
+
+button.danger:hover {
+  --bg-color: rgb(255, 38, 0);
+}
+
+button.warning {
+  --bg-color: rgb(223, 211, 44);
+  /* --fg-color: rgb(28, 27, 27); */
+  color: rgb(28, 27, 27);
+  border-color: rgb(223, 211, 44);
+}
+
+button.warning:hover {
+  --bg-color: rgb(244, 230, 34);
+  border-color: rgb(244, 230, 34);
+}
+
+button.info {
+  --bg-color: #17a2b8;
+}
+
+button.info:hover {
+  --bg-color: #107888;
+}
+
+button.light {
+  --bg-color: rgb(238, 233, 233);
+  --fg-color: rgb(28, 27, 27);
+  border-color: rgb(238, 233, 233);
+}
+
+button.light:hover {
+  --bg-color: rgb(223, 217, 217);
+  border-color: rgb(223, 217, 217);
+}
+
+button.dark {
+  --bg-color: rgb(60, 57, 57);
+}
+
+button.dark:hover {
+  --bg-color: rgb(11, 10, 10);
+}
+
+button.link {
+  background-color: transparent;
+  color: rgb(36, 108, 240);
+  border-color: transparent;
+}
+
+/* not working */
+button.link:hover {
+  text-decoration: rgb(46, 114, 240);
+}
+
+button.outline {
+  color: var(--bg-color);
+  --fg-color: #fff;
+  background-color: var(--fg-color);
+}
+
+button.outline:hover {
+  color: var(--fg-color);
+  background-color: var(--bg-color);
 }
 
