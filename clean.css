@@ -257,7 +257,8 @@ textarea:focus {
   color: #fff;
 }
 
-.navbar a:link { /* navbar link */ }
-.navbar a:visited { /* navbar vidsited */ }
-.navbar a:hover { /* navbar hover */ }
-.navbar a:active { /* navbar active */ }
+.navbar a:visited { 
+  color: #fff;
+}
+
+/*  */
