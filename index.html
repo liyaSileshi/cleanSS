@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>CSS Framework Starter Sample</title>
+	<title>Clean SS</title>
 	<link rel="stylesheet" href="clean.css">
 </head>
 
@@ -20,33 +20,38 @@
 			<li><a href="link/to/your/framework/repo">GitHub</a></li>
 		</ul>
 	</div>
-
+	<div class="hero">
+		<h1>Clean SS</h1>
+	</div>
   <div class="container">
 
 		<section id="headings">
 			<h1 class='h1'>Headings</h1>
 			<h1 class='h1'>H1 Heading</h1>
+			<p class='h1'>P tag H1 Heading</p>
 			<h2 class='h2'>H2 Heading</h2>
 			<h3 class='h3'>H3 Heading</h3>
 			<h4 class='h4'>H4 Heading</h4>
 			<h5 class='h5'>H5 Heading</h5>
 			<h6 class='h6'>H6 Heading</h6>
-
+			
 			<pre>
 				<code>
 &lt;h1 class='h1'&gt;Headings&lt;/h1&gt;
 &lt;h1 class='h1'&gt;H1 Heading&lt;/h1&gt;
+&lt;p class='h1'&gt;P tag H1 Heading&lt;/p&gt;
 &lt;h2 class='h2'&gt;H2 Heading&lt;/h2&gt;
 &lt;h3 class='h3'&gt;H3 Heading&lt;/h3&gt;
 &lt;h4 class='h4'&gt;H4 Heading&lt;/h4&gt;
 &lt;h5 class='h5'&gt;H5 Heading&lt;/h5&gt;
 &lt;h6 class='h6'&gt;H6 Heading&lt;/h6&gt;
+
 				</code>
 			</pre>
 		</section>
-		
+
 		<section id="type">
-			<h1 class='h1'>Paragraph styles</h1>
+			<h1>Paragraph styles</h1>
 			<p>This is the <strong>strong tag</strong> in a paragraph. 
 				This is the <em>em tag in a paragraph</em>, elements such 
 				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an 
@@ -62,11 +67,10 @@
 		</section>
 		
 		<section id="forms">
-			<h2 class='h2'>Buttons</h2>
+			<h1>Buttons</h1>
 
 			<p>This is your average button. You might want to click it.</p>
-			
-			<p><button>Submit</button></p>
+
 			<button class='primary'>Primary</button>
 			<button class='secondary'>Secondary</button>
 			<button class='success'>Success</button>
@@ -76,46 +80,34 @@
 			<button class='light'>Light</button>
 			<button class='dark'>Dark</button>
 			<button class='Link'>Link</button>
+			<pre>
+				<code>
+&lt;button class='primary'&gt;Primary&lt;/button&gt;
+&lt;button class='secondary'&gt;Secondary&lt;/button&gt;
+&lt;button class='success'&gt;Success&lt;/button&gt;
+&lt;button class='danger'&gt;Danger&lt;/button&gt;
+&lt;button class='warning'&gt;Warning&lt;/button&gt;
+&lt;button class='info'&gt;Info&lt;/button&gt;
+&lt;button class='light'&gt;Light&lt;/button&gt;
+&lt;button class='dark'&gt;Dark&lt;/button&gt;
+&lt;button class='link'&gt;Link&lt;/button&gt;
+				</code>
+			</pre>
 			<br>
 			<button class='warning outline'>Outline warning</button>
 			<button class='info outline'>Outline info</button>
-			<button class='light outline'>Outline info</button>
+			<button class='light outline'>Outline light</button>
 			<button class='dark outline'>Outline dark</button>
 			<pre>
 				<code>
-&lt;button&gt;Submit&lt;/button&gt;
-				</code>
-			</pre>
-
-			<p>This button has consequences. You might want to think twice before clicking.</p>
-			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
-			<p>
-<button 
-	style="--weight: bold; --background-color: #f85353;"
->Delete</button>
-	<button 
-	style="--background-color: #6bc253;"
->Go!</button>
-			</p>
-
-			<pre>
-				<code>
-&lt;button 
-	style=&quot;--weight: bold; 
-	--background-color: #f85353;&quot;
-&gt;Delete&lt;/button&gt;
-
-&lt;button 
-	style=&quot;--background-color: #6bc253;&quot;
-&gt;Go!&lt;/button&gt;
+&lt;button class='warning outline'&gt;Outline warning&lt;/button&gt;
+&lt;button class='info outline'&gt;Outline info&lt;/button&gt;
+&lt;button class='light outline'&gt;Outline light&lt;/button&gt;
+&lt;button class='dark outline'&gt;Outline dark&lt;/button&gt;
 				</code>
 			</pre>
 		</section>
 		
-		<section>
-			<h2>Links</h2>
-			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
-		</section>
 
 		<section>
 			<h2>Forms and controls</h2>
@@ -550,7 +542,7 @@
 
 		</section>
   </div>
-	<div class="page-footer">
+	<footer class="page-footer">
 		<ul>
 			<li><h3>Content</h3></li>
 			<li><a href="#colors">Colors</a></li>
@@ -570,7 +562,7 @@
 			<li><h3>Contact</h3></li>
 			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
 		</ul>
-	</div>
+	</footer>
 
 	<script src="./js/frmwrk-slides.js"></script>
 	<script src="./js/frmwrk-slides-2.js"></script>
