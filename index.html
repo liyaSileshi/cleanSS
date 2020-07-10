@@ -25,7 +25,23 @@
 	</div>
   <div class="container">
 
+		
 		<section id="headings">
+			<div class='modal hide' id='heading'>
+				<pre>
+					<code>
+	&lt;h1 class='h1'&gt;Headings&lt;/h1&gt;
+	&lt;h1 class='h1'&gt;H1 Heading&lt;/h1&gt;
+	&lt;p class='h1'&gt;P tag H1 Heading&lt;/p&gt;
+	&lt;h2 class='h2'&gt;H2 Heading&lt;/h2&gt;
+	&lt;h3 class='h3'&gt;H3 Heading&lt;/h3&gt;
+	&lt;h4 class='h4'&gt;H4 Heading&lt;/h4&gt;
+	&lt;h5 class='h5'&gt;H5 Heading&lt;/h5&gt;
+	&lt;h6 class='h6'&gt;H6 Heading&lt;/h6&gt;
+					</code>
+					<button class='danger' id='hide-modal'>X</button>
+				</pre>
+			</div>
 			<h1 class='h1'>Headings</h1>
 			<h1 class='h1'>H1 Heading</h1>
 			<p class='h1'>P tag H1 Heading</p>
@@ -34,36 +50,24 @@
 			<h4 class='h4'>H4 Heading</h4>
 			<h5 class='h5'>H5 Heading</h5>
 			<h6 class='h6'>H6 Heading</h6>
-			
-			<pre>
-				<code>
-&lt;h1 class='h1'&gt;Headings&lt;/h1&gt;
-&lt;h1 class='h1'&gt;H1 Heading&lt;/h1&gt;
-&lt;p class='h1'&gt;P tag H1 Heading&lt;/p&gt;
-&lt;h2 class='h2'&gt;H2 Heading&lt;/h2&gt;
-&lt;h3 class='h3'&gt;H3 Heading&lt;/h3&gt;
-&lt;h4 class='h4'&gt;H4 Heading&lt;/h4&gt;
-&lt;h5 class='h5'&gt;H5 Heading&lt;/h5&gt;
-&lt;h6 class='h6'&gt;H6 Heading&lt;/h6&gt;
-
-				</code>
-			</pre>
+			<button id='headingBtn'> Show Code</button>
 		</section>
 
 		<section id="type">
 			<h1>Paragraph styles</h1>
+			<div class="modal hide">
+				<pre>
+					<code>
+	&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+					</code>
+				</pre>
+			</div>
 			<p>This is the <strong>strong tag</strong> in a paragraph. 
 				This is the <em>em tag in a paragraph</em>, elements such 
 				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an 
 				example of the <abbr>abbreviation tag.</abbr> You'd use
 				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
-				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
-			
-			<pre>
-				<code>
-&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
-				</code>
-			</pre>
+				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>	
 		</section>
 		
 		<section id="forms">
@@ -133,25 +137,7 @@
 				<textarea placeholder="Your comment" id='comments'></textarea>
 				<input type='submit'>
 				<button type='submit'>Submit</button>
-
-				<!-- Switch with Click -->
-				<div class='checkbox-div'>
-					<label class="switch-2" for='switch'>
-						<span>Click Switch no JS</span>
-					</label>
-					<input type="checkbox" id='switch'>	
-				</div>
-
-				<div class='control-div'>
-					<label class="control-checkbox" for='control'>
-						<span>One</span>
-					</label>
-					<input type="control" checked="checked" id='control'>
-				</div>
-			</form>
 		</section>
-
-
 
 		<section id="colors">
 			<h1>Colors</h1>
@@ -167,13 +153,13 @@
 				
 				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
 				
-				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
+				<div style="color: var(--color-primary)">--color-primary</div>
 				
-				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
+				<div style="color: var(--color-info)">--color-info</div>
 				
-				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
+				<div style="color: var(--color-success)">--color-success</div>
 				
-				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
+				<div style="color: var(--color-danger)">--color-danger</div>
 				
 				<div style="background-color: var(--color-callout)">--color-callout</div>
 				<div style="background-color: var(--color-lightest)">--color-lightest</div>
@@ -369,38 +355,6 @@
 ... code sample needed ...
 				</code></pre>
 
-				<div>
-					<div style="margin:2em">
-						<frmwrk-slides time="5000">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
-							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
-						</frmwrk-slides>
-					</div>
-					<div style="margin:2em">
-						<frmwrk-slides-2 time="5000" style="width:257px; height:183;">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
-							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
-						</frmwrk-slides-2>
-					</div>
-					<div style="margin:2em">
-						<frmwrk-slides-2 time="5000" vertical style="width:257px; height:183;">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
-							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
-						</frmwrk-slides-2>
-					</div>
-				</div>
 		</section>
 
 		<section>
@@ -564,7 +518,7 @@
 		</ul>
 	</footer>
 
-	<script src="./js/frmwrk-slides.js"></script>
+	<script src="./modal.js"></script>
 	<script src="./js/frmwrk-slides-2.js"></script>
 </body>
 </html>
