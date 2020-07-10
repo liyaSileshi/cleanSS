@@ -25,9 +25,8 @@
 	</div>
   <div class="container">
 
-		
 		<section id="headings">
-			<div class='modal hide' id='heading'>
+			<div class='modal hide' id='modal'>
 				<pre>
 					<code>
 	&lt;h1 class='h1'&gt;Headings&lt;/h1&gt;
@@ -38,10 +37,11 @@
 	&lt;h4 class='h4'&gt;H4 Heading&lt;/h4&gt;
 	&lt;h5 class='h5'&gt;H5 Heading&lt;/h5&gt;
 	&lt;h6 class='h6'&gt;H6 Heading&lt;/h6&gt;
-					</code>
+					</code>		
 					<button class='danger' id='hide-modal'>X</button>
-				</pre>
+				</pre>		
 			</div>
+
 			<h1 class='h1'>Headings</h1>
 			<h1 class='h1'>H1 Heading</h1>
 			<p class='h1'>P tag H1 Heading</p>
@@ -50,17 +50,22 @@
 			<h4 class='h4'>H4 Heading</h4>
 			<h5 class='h5'>H5 Heading</h5>
 			<h6 class='h6'>H6 Heading</h6>
-			<button id='headingBtn'> Show Code</button>
+			<button id='headingBtn' class='code'> Show Code</button>
 		</section>
 
-		<section id="type">
+		<section id="paragraphs">
 			<h1>Paragraph styles</h1>
-			<div class="modal hide">
+			<button id='headingBtn' class='code'> Show Code</button>
+			<div class="modal hide" id='modal'>
 				<pre>
 					<code>
-	&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
-					</code>
+	&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. 
+	It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; 
+	and &lt;em&gt;.&lt;/p&gt;
+					</code>	
+					<button class='danger' id='hide-modal'>X</button>
 				</pre>
+				
 			</div>
 			<p>This is the <strong>strong tag</strong> in a paragraph. 
 				This is the <em>em tag in a paragraph</em>, elements such 
@@ -70,7 +75,7 @@
 				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>	
 		</section>
 		
-		<section id="forms">
+		<section id="buttons">
 			<h1>Buttons</h1>
 
 			<p>This is your average button. You might want to click it.</p>
@@ -113,7 +118,7 @@
 		</section>
 		
 
-		<section>
+		<section id='forms'>
 			<h2>Forms and controls</h2>
 			<form>
 				<label for='name'>
