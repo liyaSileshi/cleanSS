@@ -63,8 +63,7 @@ class SimpleSlides extends HTMLElement {
     })
     
     // Keep track of the index of the current image displayed
-    this._index = 0
-    
+    this._index = -1
   }
 
   // Use this add the interval/timer
@@ -74,6 +73,8 @@ class SimpleSlides extends HTMLElement {
     // Save a reference to your timer so you can remove it
     console.log(this._time, this._transition)
     console.log(this._innerDiv.style.transition)
+    // remove your timer 
+    this._removeTimer()
     this._timer = setInterval(() => this._nextImg(), this._time)
   }
 
@@ -112,7 +113,7 @@ class SimpleSlides extends HTMLElement {
       // set your time property
         this._time = newValue
         // remove your timer 
-        this._removeTimer()
+        // this._removeTimer()
         // add a new timer
         this._addTimer()
         break
@@ -126,7 +127,6 @@ class SimpleSlides extends HTMLElement {
 
       case 'paused': 
         // Stretch challenge Set a pause attribute 
-
         break
 
     }
@@ -144,6 +144,7 @@ class SimpleSlides extends HTMLElement {
     // You need to translate the slides one slide width to the left 
     // each time this method is called. 
     this._index = (this._index + 1) % this._imgs.length
+    console.log(this._index)
     const x = this._index * -this._width
     this._innerDiv.style.transform = `translate(${x}px, 0)`
   }
