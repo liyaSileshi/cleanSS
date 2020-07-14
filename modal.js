@@ -1,11 +1,4 @@
-const headingBtn = document.getElementById('headingBtn') //btn that will display heading code
-const heading = document.getElementById('heading') //div that holds the modal(code) for the heading
-headingBtn.addEventListener('click', showCode)
-// console.log(headingBtn.parentNode)
-//const hideBtn = document.getElementById('hide-modal') //button to hide modal
 const allHideBtn = Array.from(document.querySelectorAll('button#hide-modal'))
-// hideBtn.addEventListener('click', hideCode)
-
 const allCodesBtn = Array.from(document.querySelectorAll('button.code'))
 console.log(allCodesBtn)
 //check which code button is clicked
@@ -39,3 +32,4 @@ function hideCode(e) {
   // let modal = parent.querySelector('#modal')//look for a div with class/id modal
   // modal.classList.add("hide"); //remove the hide class
 }
+
