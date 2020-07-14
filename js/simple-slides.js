@@ -30,7 +30,7 @@ class SimpleSlides extends HTMLElement {
     this._height = this.getAttribute('height')
     this._time = this.getAttribute('time')
     this._transition = this.getAttribute('transition')
-
+    this._move = this.getAttribute('move')
     // Create a shadow root node
     this._shadowRoot = this.attachShadow({ mode: 'open' })
 
@@ -143,10 +143,21 @@ class SimpleSlides extends HTMLElement {
     // this._innerDiv.style.transform = `translate(${this._width * this._index * -1})`
     // You need to translate the slides one slide width to the left 
     // each time this method is called. 
-    this._index = (this._index + 1) % this._imgs.length
-    console.log(this._index)
-    const x = this._index * -this._width
-    this._innerDiv.style.transform = `translate(${x}px, 0)`
+    if (this._move === 'vertical') {
+      this._innerDiv.style.flexDirection = 'column'
+      this._index = (this._index + 1) % this._imgs.length
+      const x = this._index * -this._height
+      this._innerDiv.style.transform = `translate(0, ${x}px)`
+    }
+    else {
+      this._index = (this._index + 1) % this._imgs.length
+      const x = this._index * -this._width
+      this._innerDiv.style.transform = `translate(${x}px, 0)`
+    }
+    // this._index = (this._index + 1) % this._imgs.length
+    // console.log(this._index)
+    // const x = this._index * -this._width
+    // this._innerDiv.style.transform = `translate(0, ${x}px)`
   }
 }
 
