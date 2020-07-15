@@ -8,7 +8,7 @@
 	
 	<div class="navbar">
 		<ul>
-			<li><h1 class="title">Clean SS</h1></li>
+			<li><h1 class='title'>Clean SS</h1></li>
 			<li><a href="#colors">Colors</a></li>
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
@@ -42,20 +42,20 @@
 				</pre>		
 			</div>
 
-			<h1 class='h1'>Headings</h1>
+			<h1 class='section'>Typography</h1>
+			<button id='headingBtn' class='code'> < ></button>
 			<h1 class='h1'>H1 Heading</h1>
 			<p class='h1'>P tag H1 Heading</p>
 			<h2 class='h2'>H2 Heading</h2>
 			<h3 class='h3'>H3 Heading</h3>
 			<h4 class='h4'>H4 Heading</h4>
 			<h5 class='h5'>H5 Heading</h5>
-			<h6 class='h6'>H6 Heading</h6>
-			<button id='headingBtn' class='code'> Show Code</button>
+			<h6 class='h6'>H6 Heading</h6>			
 		</section>
 
 		<section id="paragraphs">
-			<h1>Paragraph styles</h1>
-			<button id='headingBtn' class='code'> Show Code</button>
+			<h1 class='section'>Paragraph styles</h1>
+			<button id='headingBtn' class='code'> < ></button>
 			<div class="modal hide" id='modal'>
 				<pre>
 					<code>
@@ -76,10 +76,9 @@
 		</section>
 		
 		<section id="buttons">
-			<h1>Buttons</h1>
-			<button id='headingBtn' class='code'> Show Code</button>
-			<p>This is your average button. You might want to click it.</p>
-
+			<h1 class='section'>Buttons</h1>
+			<button id='headingBtn' class='code'> < ></button>
+			<br>
 			<button class='primary'>Primary</button>
 			<button class='secondary'>Secondary</button>
 			<button class='success'>Success</button>
@@ -108,12 +107,14 @@
 			</div>
 			
 			<br>
+			<button id='headingBtn' class='code'> < ></button>
+			<br>
 			<button class='warning outline'>Outline warning</button>
 			<button class='info outline'>Outline info</button>
 			<button class='light outline'>Outline light</button>
 			<button class='dark outline'>Outline dark</button>
 			<br>
-			<button id='headingBtn' class='code'> Show Code</button>
+			
 			<div class='modal hide' id='modal'>
 				<pre>
 					<code>
@@ -129,7 +130,8 @@
 		
 
 		<section id='forms'>
-			<h2>Forms and controls</h2>
+			<h1 class='section'>Forms and controls</h1>
+			<button id='headingBtn' class='code'> < ></button>
 			<form>
 				<label for='name'>
 					<span>Username</span>
@@ -152,10 +154,44 @@
 				<textarea placeholder="Your comment" id='comments'></textarea>
 				<input type='submit'>
 				<button type='submit'>Submit</button>
+			</form>
+
+				<div class='modal hide' id='modal'>
+					<pre>
+						<code>
+		&lt;form&gt;
+		 &lt;label for='name'&gt;
+		  &lt;span&gt;Username&lt;/span&gt;
+		 &lt;/label&gt;
+		 &lt;input type="text" id="name" placeholder="What is your name?"&gt;
+
+		 &lt;label for='email'&gt;
+		  &lt;span&gt;Email&lt;/span&gt;
+		 &lt;/label&gt;
+		 &lt;input type="email" id="email" placeholder="What is your email?"&gt;
+
+		 &lt;label for='password'&gt;
+		  &lt;span&gt;Password&lt;/span&gt;
+		 &lt;/label&gt;
+		 &lt;input type="password" id="password" placeholder="password...?"&gt;
+
+		 &lt;label for='comments'&gt;
+		  &lt;span&gt;Your comments&lt;/span&gt;
+		 &lt;/label&gt;
+		 &lt;textarea placeholder="Your comment" id="comments"&gt;&lt;/textarea&gt;
+		 &lt;input type="submit"&gt;
+		 &lt;button type='submit'&gt;Submit&lt;/button&gt;
+		&lt;/form&gt;
+
+
+						</code>
+						<button class='danger' id='hide-modal'>X</button>
+					</pre>
+				</div>
 		</section>
 
 		<section id="colors">
-			<h1>Colors</h1>
+			<h1 class='section'>Colors</h1>
 			<div class="color-grid">
 				
 				<div style="background-color: var(--color-background)">--color-background</div>
@@ -182,7 +218,7 @@
 		</section>
 		
 		<section id="navbar">
-			<h1>Navbar</h1>
+			<h1 class='section'>Navbar</h1>
 			
 			<h2>Navbar 1</h2>
 			<p>A navbar with all elements on the left.</p>
@@ -336,7 +372,7 @@
 		
 		
 		<section id="footers">
-			<h2>Page Footer</h2>
+			<h1 class='section'>Page Footer</h1>
 			<div class="page-footer">
 				<ul>
 					<li><h3>Column 1</h3></li>
@@ -362,7 +398,7 @@
 		</section>
 
 		<section>
-			<h3>Components</h3>
+			<h1 class='section'>Components</h1>
 			<p>Frmwrk CSS also includes some slideshow components. To use these include 
 				the JS files at the bottom of the body and use the markup as shown.</p>
 
