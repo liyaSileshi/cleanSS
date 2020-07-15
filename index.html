@@ -29,14 +29,14 @@
 			<div class='modal hide' id='modal'>
 				<pre>
 					<code>
-	&lt;h1 class='h1'&gt;Headings&lt;/h1&gt;
-	&lt;h1 class='h1'&gt;H1 Heading&lt;/h1&gt;
-	&lt;p class='h1'&gt;P tag H1 Heading&lt;/p&gt;
-	&lt;h2 class='h2'&gt;H2 Heading&lt;/h2&gt;
-	&lt;h3 class='h3'&gt;H3 Heading&lt;/h3&gt;
-	&lt;h4 class='h4'&gt;H4 Heading&lt;/h4&gt;
-	&lt;h5 class='h5'&gt;H5 Heading&lt;/h5&gt;
-	&lt;h6 class='h6'&gt;H6 Heading&lt;/h6&gt;
+&lt;h1 class='h1'&gt;Headings&lt;/h1&gt;
+&lt;h1 class='h1'&gt;H1 Heading&lt;/h1&gt;
+&lt;p class='h1'&gt;P tag H1 Heading&lt;/p&gt;
+&lt;h2 class='h2'&gt;H2 Heading&lt;/h2&gt;
+&lt;h3 class='h3'&gt;H3 Heading&lt;/h3&gt;
+&lt;h4 class='h4'&gt;H4 Heading&lt;/h4&gt;
+&lt;h5 class='h5'&gt;H5 Heading&lt;/h5&gt;
+&lt;h6 class='h6'&gt;H6 Heading&lt;/h6&gt;
 					</code>		
 					<button class='danger' id='hide-modal'>X</button>
 				</pre>		
@@ -107,6 +107,7 @@
 			</div>
 			
 			<br>
+		<div>
 			<button id='headingBtn' class='code'> < ></button>
 			<br>
 			<button class='warning outline'>Outline warning</button>
@@ -126,6 +127,7 @@
 					<button class='danger' id='hide-modal'>X</button>
 				</pre>
 			</div>
+		</div>
 		</section>
 		
 
@@ -159,29 +161,29 @@
 				<div class='modal hide' id='modal'>
 					<pre>
 						<code>
-		&lt;form&gt;
-		 &lt;label for='name'&gt;
-		  &lt;span&gt;Username&lt;/span&gt;
-		 &lt;/label&gt;
-		 &lt;input type="text" id="name" placeholder="What is your name?"&gt;
+&lt;form&gt;
+	&lt;label for='name'&gt;
+	&lt;span&gt;Username&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input type="text" id="name" placeholder="What is your name?"&gt;
 
-		 &lt;label for='email'&gt;
-		  &lt;span&gt;Email&lt;/span&gt;
-		 &lt;/label&gt;
-		 &lt;input type="email" id="email" placeholder="What is your email?"&gt;
+	&lt;label for='email'&gt;
+	&lt;span&gt;Email&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input type="email" id="email" placeholder="What is your email?"&gt;
 
-		 &lt;label for='password'&gt;
-		  &lt;span&gt;Password&lt;/span&gt;
-		 &lt;/label&gt;
-		 &lt;input type="password" id="password" placeholder="password...?"&gt;
+	&lt;label for='password'&gt;
+	&lt;span&gt;Password&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;input type="password" id="password" placeholder="password...?"&gt;
 
-		 &lt;label for='comments'&gt;
-		  &lt;span&gt;Your comments&lt;/span&gt;
-		 &lt;/label&gt;
-		 &lt;textarea placeholder="Your comment" id="comments"&gt;&lt;/textarea&gt;
-		 &lt;input type="submit"&gt;
-		 &lt;button type='submit'&gt;Submit&lt;/button&gt;
-		&lt;/form&gt;
+	&lt;label for='comments'&gt;
+	&lt;span&gt;Your comments&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;textarea placeholder="Your comment" id="comments"&gt;&lt;/textarea&gt;
+	&lt;input type="submit"&gt;
+	&lt;button type='submit'&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
 
 
 						</code>
@@ -219,11 +221,7 @@
 		
 		<section id="navbar">
 			<h1 class='section'>Navbar</h1>
-			
-			<h2>Navbar 1</h2>
-			<p>A navbar with all elements on the left.</p>
-			<p>Use a single child under <code>div.navbar</code>.</p>
-
+			<button class='code'> < ></button>
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
@@ -234,7 +232,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class='modal hide' id='modal'>
 				<pre class="code-block">
 					<code>
 &lt;div class=&quot;navbar&quot;&gt;
@@ -247,15 +245,13 @@
 	&lt;/ul&gt;
 &lt;/div&gt;
 					</code>
+					<button class='danger' id='hide-modal'>X</button>
 				</pre>
 			</div>
 
-
-
-			
-			<h2>Navbar 2</h2>
-			<p>A navbar with groups of elements on the left and the right.</p>
-			<p>Use two children under <code>div.navbar</code>.</p>
+			<br>
+		<div>
+			<button class='code'> < ></button>
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
@@ -269,8 +265,8 @@
 				</ul>
 			</div>
 
-			<div>
-				<pre class="code-block">
+			<div class='modal hide' id='modal'>
+				<pre>
 					<code>
 &lt;div class=&quot;navbar&quot;&gt;
 	&lt;ul&gt;
@@ -285,11 +281,14 @@
 	&lt;/ul&gt;
 &lt;/div&gt;
 					</code>
+				<button class='danger' id='hide-modal'>X</button>
 				</pre>
 			</div>
-			
-			<p>here is an alternative with the site title on the left and links on the right.</p>
+		</div>	
 
+		<br>
+	<div>
+		<button class='code'> < ></button>
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
@@ -303,7 +302,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class='modal hide' id='modal'>
 					<pre class="code-block">
 						<code>
 &lt;div class=&quot;navbar&quot;&gt;
@@ -319,15 +318,14 @@
 	&lt;/ul&gt;
 &lt;/div&gt;
 						</code>
+						<button class='danger' id='hide-modal'>X</button>
 					</pre>
 				</div>
-				
+			</div>	
 
-
-			
-			<h2>Navbar 3</h2>
-			<p>With three children the second child will be centered. 
-				This example places the site title in the center.</p>
+			<br>
+			<div>
+			<button class='code'> < ></button>
 			<div class="navbar">
 				<ul>
 					<li><a href="#">Products</a></li>
@@ -344,7 +342,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class='modal hide' id='modal'>
 					<pre class="code-block">
 						<code>
 &lt;div class=&quot;navbar&quot;&gt;
@@ -363,9 +361,10 @@
 	&lt;/ul&gt;
 &lt;/div&gt;
 						</code>
+						<button class='danger' id='hide-modal'>X</button>
 					</pre>
 				</div>
-
+			</div>
 
 		</section>
 		
@@ -373,6 +372,7 @@
 		
 		<section id="footers">
 			<h1 class='section'>Page Footer</h1>
+			<button class='code'> < ></button>
 			<div class="page-footer">
 				<ul>
 					<li><h3>Column 1</h3></li>
@@ -395,12 +395,39 @@
 					<li><a>Item 3</a></li>
 				</ul>
 			</div>
+			<div class='modal hide' id='modal'>
+				<pre class="code-block">
+					<code>
+&lt;div class=&quot;page-footer&quot;&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;h3&gt;Column 1&lt;/h3&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;h3&gt;Column 2&lt;/h3&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;h3&gt;Column 3&lt;/h3&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+					<button class='danger' id='hide-modal'>X</button>
+				</pre>
+			</div>
 		</section>
 
 		<section>
 			<h1 class='section'>Components</h1>
-			<p>Frmwrk CSS also includes some slideshow components. To use these include 
-				the JS files at the bottom of the body and use the markup as shown.</p>
 
 				<pre><code>
 ... code sample needed ...
