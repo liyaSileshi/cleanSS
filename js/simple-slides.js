@@ -146,8 +146,8 @@ class SimpleSlides extends HTMLElement {
     if (this._move === 'vertical') {
       this._innerDiv.style.flexDirection = 'column'
       this._index = (this._index + 1) % this._imgs.length
-      const x = this._index * -this._height
-      this._innerDiv.style.transform = `translate(0, ${x}px)`
+      const y = this._index * -this._height
+      this._innerDiv.style.transform = `translate(0, ${y}px)`
     }
     else {
       this._index = (this._index + 1) % this._imgs.length
