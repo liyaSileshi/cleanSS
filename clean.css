@@ -333,7 +333,7 @@ background-color: white;
   display: none;
 }
 
-#buttons {
+#buttons, #components {
   display: flex;
   justify-content: space-around;
 }
@@ -341,4 +341,10 @@ background-color: white;
 .container {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+section {
+  border-bottom: solid palevioletred 1px;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
 }

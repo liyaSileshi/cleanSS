@@ -426,15 +426,59 @@
 				</pre>
 			</div>
 		</section>
+		
+		<h1 class='section'>Components</h1>
+		<section id='components'>
+			<div>
+				<button class='code'> < ></button>
+				<simple-slides time="2000" transition='300' width="259" height="183">
+					<img src="./images/kitten-0.jpg" width="259" height="183">
+					<img src="./images/kitten-1.jpg" width="259" height="183">
+					<img src="./images/kitten-2.jpg" width="259" height="183">
+					<img src="./images/kitten-3.jpg" width="259" height="183">
+					<img src="./images/kitten-4.jpg" width="259" height="183">
+					<img src="./images/kitten-5.jpg" width="259" height="183">
+				</simple-slides>
+				<div class='modal hide' id='modal'>
+					<pre>
+						<code>
+			 &lt;simple-slides time='2000' transition='300' width='259' height='183'&gt;
+			  &lt;img src='./image...' width='259' height='183'&gt;
+			  &lt;img src='./image...' width='259' height='183'&gt;
+			  &lt;img src='./image...' width='259' height='183'&gt;
+			 &lt;/simple-slides&gt;
+						</code>
+						<button class='danger' id='hide-modal'>X</button>
+					</pre>
+				</div>
+			</div>
 
-		<section>
-			<h1 class='section'>Components</h1>
+			<div>
+				<button class='code'> < ></button>
+				<simple-slides time="2000" transition='300' width="259" height="183" move='vertical'>
+					<img src="./images/kitten-0.jpg" width="259" height="183">
+					<img src="./images/kitten-1.jpg" width="259" height="183">
+					<img src="./images/kitten-2.jpg" width="259" height="183">
+					<img src="./images/kitten-3.jpg" width="259" height="183">
+					<img src="./images/kitten-4.jpg" width="259" height="183">
+					<img src="./images/kitten-5.jpg" width="259" height="183">
+				</simple-slides>
 
-				<pre><code>
-... code sample needed ...
-				</code></pre>
-
+				<div class='modal hide' id='modal'>
+					<pre>
+						<code>
+			&lt;simple-slides time='2000' transition='300' width='259' height='183' move='vertical'&gt;
+			 &lt;img src='./image...' width='259' height='183'&gt;
+			 &lt;img src='./image...' width='259' height='183'&gt;
+			 &lt;img src='./image...' width='259' height='183'&gt;
+			&lt;/simple-slides&gt;
+						</code>
+						<button class='danger' id='hide-modal'>X</button>
+					</pre>
+				</div>
+			</div>
 		</section>
+
 
 		<section>
 			<h3>Full Color Palette</h3>
@@ -598,6 +642,6 @@
 	</footer>
 
 	<script src="./modal.js"></script>
-	<script src="./js/frmwrk-slides-2.js"></script>
+	<script src="./js/simple-slides.js"></script>
 </body>
 </html>
